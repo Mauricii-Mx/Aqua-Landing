@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores del Sistema de Diseño de Stitch */
+  --color-primary: #001930;
+  --color-primary-container: #0a2e4d;
+  --color-secondary: #006877;
+  --color-secondary-container: #75e7fe;
+  --color-cta-amber: #F2A413;
+  --color-background: #faf9fc;
+  --color-surface: #faf9fc;
+  --color-surface-base: #FAFAFA;
+  --color-surface-dim: #dad9dd;
+  --color-surface-bright: #faf9fc;
+  --color-surface-container: #eeedf0;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f3f6;
+  --color-surface-container-high: #e9e8eb;
+  --color-surface-container-highest: #e3e2e5;
+  --color-on-background: #1a1c1e;
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #43474e;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #7896ba;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #006776;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #bc895b;
+  --color-outline: #73777e;
+  --color-outline-variant: #c3c6ce;
+  --color-primary-fixed: #d1e4ff;
+  --color-primary-fixed-dim: #abc9f0;
+  --color-secondary-fixed: #a4eeff;
+  --color-secondary-fixed-dim: #62d6ed;
+
+  /* Familias Tipográficas (font-*) */
+  --font-headline-xl: 'Hanken Grotesk', sans-serif;
+  --font-headline-xl-mobile: 'Hanken Grotesk', sans-serif;
+  --font-headline-lg: 'Hanken Grotesk', sans-serif;
+  --font-headline-md: 'Hanken Grotesk', sans-serif;
+  --font-headline-sm: 'Hanken Grotesk', sans-serif;
+  --font-body-lg: 'Work Sans', sans-serif;
+  --font-body-md: 'Work Sans', sans-serif;
+  --font-label-lg: 'Work Sans', sans-serif;
+
+  /* Tamaños y estilos de Texto (text-*) con Modificadores de Tailwind v4 */
+  --text-headline-xl: 60px;
+  --text-headline-xl--line-height: 72px;
+  --text-headline-xl--font-weight: 800;
+  --text-headline-xl--letter-spacing: -0.02em;
+
+  --text-headline-xl-mobile: 40px;
+  --text-headline-xl-mobile--line-height: 48px;
+  --text-headline-xl-mobile--font-weight: 800;
+
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 56px;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-lg--letter-spacing: -0.01em;
+
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 40px;
+  --text-headline-md--font-weight: 700;
+
+  --text-headline-sm: 24px;
+  --text-headline-sm--line-height: 32px;
+  --text-headline-sm--font-weight: 600;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--font-weight: 600;
+  --text-label-lg--letter-spacing: 0.05em;
+
+  /* Espaciado personalizado (p-*, m-*, w-*, h-*) */
+  --spacing-container-max: 1280px;
+  --spacing-section-padding-desktop: 120px;
+  --spacing-section-padding-mobile: 64px;
+  --spacing-gutter: 24px;
+
+  /* Bordes redondeados (rounded-*) */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+/* Clases y animaciones personalizadas de la Versión 3 */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-nav {
+  background: rgba(250, 249, 252, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.water-gradient-animated {
+  background: linear-gradient(135deg, #0A2E4D, #16A6C9, #0A2E4D);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-overlay {
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 25, 48, 0.3) 100%);
+}
+
+.step-line::after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  width: 2px;
+  height: calc(100% - 2rem);
+  background: #75e7fe;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .step-line::after {
+    top: 50%;
+    left: 2rem;
+    width: calc(100% - 2rem);
+    height: 2px;
+  }
+}

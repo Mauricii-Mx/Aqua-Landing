@@ -1,0 +1,386 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<!-- TopNavBar -->
+	<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm h-20">
+		<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+			<div class="font-headline-sm text-headline-sm font-bold text-primary">
+				AquaPura del Sur
+			</div>
+			<div class="hidden md:flex items-center space-x-8">
+				<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#inicio">Inicio</a>
+				<a class="text-on-surface-variant font-medium hover:text-cta-amber transition-colors duration-300 font-label-lg text-label-lg" href="#trayectoria">Trayectoria</a>
+				<a class="text-on-surface-variant font-medium hover:text-cta-amber transition-colors duration-300 font-label-lg text-label-lg" href="#proceso">Proceso</a>
+				<a class="text-on-surface-variant font-medium hover:text-cta-amber transition-colors duration-300 font-label-lg text-label-lg" href="#precios">Precios</a>
+				<a class="text-on-surface-variant font-medium hover:text-cta-amber transition-colors duration-300 font-label-lg text-label-lg" href="#contacto">Contacto</a>
+			</div>
+			<button class="bg-cta-amber text-white font-bold px-6 py-3 rounded hover:opacity-90 transition-all active:scale-95 text-label-lg">
+				Invertir Hoy
+			</button>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="relative pt-20 overflow-hidden" id="inicio">
+		<div class="water-gradient-animated min-h-[819px] flex items-center relative">
+			<div class="absolute inset-0 hero-overlay"></div>
+			<div class="relative z-10 w-full px-gutter max-w-container-max mx-auto grid md:grid-cols-2 gap-12 items-center py-section-padding-mobile md:py-section-padding-desktop">
+				<div class="space-y-6">
+					<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-lg text-label-lg tracking-wider">LÍDERES EN PURIFICACIÓN B2B</span>
+					<h1 class="text-white font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl leading-tight drop-shadow-md">
+						El negocio del agua: <span class="text-secondary-fixed-dim">seguro, rentable</span> y en expansión.
+					</h1>
+					<p class="text-primary-fixed font-body-lg text-body-lg max-w-lg drop-shadow-sm">
+						Únase a la infraestructura de purificación más robusta del sur. Garantizamos pureza absoluta con tecnología de vanguardia y rentabilidad corporativa comprobada.
+					</p>
+					<div class="flex flex-wrap gap-4 pt-4">
+						<a class="bg-cta-amber text-white font-bold px-8 py-4 rounded shadow-lg hover:shadow-xl transition-all font-label-lg text-label-lg" href="#contacto">
+							Descargar Dossier 2024
+						</a>
+						<a class="border-2 border-secondary-fixed-dim text-secondary-fixed-dim font-bold px-8 py-4 rounded hover:bg-secondary-fixed-dim/10 transition-all font-label-lg text-label-lg" href="#proceso">
+							Ver Tecnología
+						</a>
+					</div>
+				</div>
+				<div class="hidden md:block relative h-[500px]">
+					<div class="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden shadow-2xl">
+						<img class="w-full h-full object-cover opacity-90" alt="A professional high-angle shot of a state-of-the-art water purification facility. Multiple large, gleaming stainless steel filtration tanks are lined up in a clean, brightly lit industrial space with pristine white floors and turquoise accents. The atmosphere is sterile, modern, and authoritative, emphasizing industrial-scale efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN7-7LIUrQRgfIYQfNGJukEh95Y2oXEN2179r8yOVsxnRI-LfRJ6EE5Bh7SFW-qwEgsKOx_QEghC1RAj7ZgK4olQdCXwYymlw_bB5wPglL_UcGKZr4J6w65S1HXTJoXsPc1rtGY1G01W1egmKVKt9Kwje3Ny5vDWoHXD2cCsjVgeZIAMHQfJSCEhrBqJ7ql2ev7Ub2tQqZ2LBJAtfzI3gcC4mu7M1wFyKji3GAJykHYZSOW1HSRiTNTDyeMjWwewVUp9jOtzTM1K0" />
+					</div>
+					<div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded shadow-xl border-l-4 border-cta-amber">
+						<p class="text-primary font-bold text-headline-sm">99.9%</p>
+						<p class="text-on-surface-variant font-label-lg">Pureza Certificada</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Investor/Stats Section -->
+	<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface" id="trayectoria">
+		<div class="px-gutter max-w-container-max mx-auto">
+			<div class="text-center mb-16">
+				<h2 class="text-primary font-headline-md text-headline-md mb-4">Solidez que Genera Confianza</h2>
+				<div class="w-20 h-1 bg-cta-amber mx-auto"></div>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Stat Card 1 -->
+				<div class="bg-white border border-primary/10 p-10 rounded shadow-sm hover:shadow-md transition-shadow">
+					<span class="material-symbols-outlined text-secondary text-4xl mb-4">history</span>
+					<h3 class="text-primary font-headline-xl text-headline-xl block mb-2">12 Años</h3>
+					<p class="text-on-surface-variant font-body-md">De trayectoria ininterrumpida liderando el mercado regional con procesos de mejora continua.</p>
+				</div>
+				<!-- Stat Card 2 -->
+				<div class="bg-white border border-primary/10 p-10 rounded shadow-sm hover:shadow-md transition-shadow">
+					<span class="material-symbols-outlined text-secondary text-4xl mb-4">location_on</span>
+					<h3 class="text-primary font-headline-xl text-headline-xl block mb-2">38</h3>
+					<p class="text-on-surface-variant font-body-md">Sucursales activas distribuidas estratégicamente en los principales nodos comerciales del sur.</p>
+					<div class="mt-4 flex items-center">
+						<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">En Expansión</span>
+					</div>
+				</div>
+				<!-- Stat Card 3 -->
+				<div class="bg-white border border-primary/10 p-10 rounded shadow-sm hover:shadow-md transition-shadow">
+					<span class="material-symbols-outlined text-secondary text-4xl mb-4">analytics</span>
+					<h3 class="text-primary font-headline-xl text-headline-xl block mb-2">24%</h3>
+					<p class="text-on-surface-variant font-body-md">Retorno de inversión anual proyectado para socios estratégicos B2B en el primer bienio.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Purification Process Section -->
+	<section class="py-section-padding-mobile md:py-section-padding-desktop overflow-hidden" id="proceso" style="position: relative; background-image: linear-gradient(rgba(10, 46, 77, 0.85), rgba(10, 46, 77, 0.85)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVOR-jfYph13H19Wu8v3kvLzVjTL1kXxsPykQTjoXCCDIfm5GVB-K_yUL3pyZOCxsVPINdXd7gxjIb_iTnjNHeOTc33WHGHsLKMJobHqDshvfr_Zold2KhRCVET33jh0Pu2nX4tAHJWSzNdZFL-ScW9dmVslGUypYZhYMdiwzJTGnZ3nOchj9TF4jbcSY6jOFKhLouwCaNizTnBcMOOBwcCOFdfOlbzG4vRjzK3tEVqyGmxHvfyhWoGt5yeQGZOIA_hObgYrNBuog'); background-size: cover; background-position: center; backdrop-filter: blur(8px);">
+		<div class="px-gutter max-w-container-max mx-auto">
+			<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+				<div class="max-w-2xl">
+					<h2 class="font-headline-lg text-headline-lg mb-4 text-white">Sistema de Purificación de 7 Etapas</h2>
+					<p class="font-body-lg text-primary-fixed">Tecnología de grado farmacéutico aplicada al consumo masivo para garantizar un producto libre de impurezas.</p>
+				</div>
+				<span class="material-symbols-outlined text-6xl opacity-20 text-secondary-fixed-dim">biotech</span>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-7 gap-4 relative">
+				<!-- Step 1 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">1</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Filtración</h4>
+					<p class="text-xs px-2 text-primary-fixed">Eliminación de sedimentos y sólidos en suspensión.</p>
+				</div>
+				<!-- Step 2 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">2</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Carbón Activado</h4>
+					<p class="text-xs px-2 text-primary-fixed">Remoción de cloro, olores y sabores orgánicos.</p>
+				</div>
+				<!-- Step 3 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">3</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Suavización</h4>
+					<p class="text-xs px-2 text-primary-fixed">Intercambio iónico para reducir dureza mineral.</p>
+				</div>
+				<!-- Step 4 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">4</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Ósmosis Inversa</h4>
+					<p class="text-xs px-2 font-bold text-primary-fixed">Corazón del proceso: Pureza molecular.</p>
+				</div>
+				<!-- Step 5 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">5</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Pulido</h4>
+					<p class="text-xs px-2 text-primary-fixed">Ajuste final de cristalinidad y textura.</p>
+				</div>
+				<!-- Step 6 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">6</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Luz UV</h4>
+					<p class="text-xs px-2 text-primary-fixed">Desinfección microbiológica inmediata.</p>
+				</div>
+				<!-- Step 7 -->
+				<div class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full bg-cta-amber text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">7</div>
+					<h4 class="font-bold mb-2 text-label-lg text-white">Ozonización</h4>
+					<p class="text-xs px-2 text-primary-fixed">Preservación de frescura prolongada.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Price Grid Section -->
+	<section class="py-section-padding-mobile md:py-section-padding-desktop bg-background" id="precios">
+		<div class="px-gutter max-w-container-max mx-auto">
+			<div class="text-center mb-16">
+				<h2 class="text-primary font-headline-md text-headline-md mb-4">Precios Corporativos & Distribución</h2>
+				<p class="text-on-surface-variant font-body-md max-w-xl mx-auto">Escalabilidad diseñada para maximizar el margen de utilidad de nuestros socios estratégicos.</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Standard Price -->
+				<div class="bg-surface border border-outline-variant p-8 rounded-xl flex flex-col">
+					<h3 class="text-primary font-headline-sm text-headline-sm mb-2">Minorista Local</h3>
+					<p class="text-on-surface-variant text-sm mb-6">Ideal para pequeños establecimientos y oficinas.</p>
+					<div class="mb-6">
+						<span class="text-primary font-headline-lg text-headline-lg">$22</span>
+						<span class="text-on-surface-variant">/ Garrafón</span>
+					</div>
+					<ul class="space-y-4 mb-8 flex-grow">
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="text-on-surface font-body-md">Entrega programada</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="text-on-surface font-body-md">Certificado de pureza</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="text-on-surface font-body-md">Atención B2B básica</span>
+						</li>
+					</ul>
+					<button class="w-full py-3 border-2 border-primary text-primary font-bold rounded hover:bg-primary/5 transition-colors">Solicitar Pedido</button>
+				</div>
+				<!-- Featured Price (B2B) -->
+				<div class="bg-primary text-white p-8 rounded-xl flex flex-col relative scale-105 shadow-2xl z-10 border-4 border-cta-amber">
+					<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-cta-amber text-white px-4 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest">MÁS RENTABLE</div>
+					<h3 class="text-white font-headline-sm text-headline-sm mb-2">Distribuidor Oro</h3>
+					<p class="text-primary-fixed text-sm mb-6">Volumen medio para rutas de distribución locales.</p>
+					<div class="mb-6">
+						<span class="text-white font-headline-lg text-headline-lg">$16</span>
+						<span class="text-primary-fixed">/ Garrafón</span>
+					</div>
+					<ul class="space-y-4 mb-8 flex-grow">
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="font-body-md">Precio preferencial x 100+</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="font-body-md">Logística de retorno incluida</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="font-body-md">Soporte en marketing local</span>
+						</li>
+					</ul>
+					<button class="w-full py-3 bg-cta-amber text-white font-bold rounded hover:opacity-90 transition-all">Iniciar Alianza</button>
+				</div>
+				<!-- Industrial Price -->
+				<div class="bg-surface border border-outline-variant p-8 rounded-xl flex flex-col">
+					<h3 class="text-primary font-headline-sm text-headline-sm mb-2">Socio Franquiciatario</h3>
+					<p class="text-on-surface-variant text-sm mb-6">Para inversionistas que buscan su propia planta.</p>
+					<div class="mb-6">
+						<span class="text-primary font-headline-lg text-headline-lg">Desde $450k</span>
+					</div>
+					<ul class="space-y-4 mb-8 flex-grow">
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="text-on-surface font-body-md">Equipo industrial completo</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="text-on-surface font-body-md">Capacitación técnica total</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+							<span class="text-on-surface font-body-md">Derechos territoriales</span>
+						</li>
+					</ul>
+					<button class="w-full py-3 border-2 border-primary text-primary font-bold rounded hover:bg-primary/5 transition-colors">Solicitar Auditoría</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Lead Gen Form Section -->
+	<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container-high relative overflow-hidden" id="contacto">
+		<div class="px-gutter max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+			<div>
+				<h2 class="text-primary font-headline-lg text-headline-lg mb-6">Invierta en el Futuro del Agua</h2>
+				<p class="text-on-surface-variant font-body-lg mb-8">Nuestros analistas financieros están listos para presentarle el modelo de negocio detallado. Complete el formulario para agendar una reunión privada.</p>
+				<div class="space-y-6">
+					<div class="flex items-center gap-4">
+						<div class="w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white">
+							<span class="material-symbols-outlined">support_agent</span>
+						</div>
+						<div>
+							<p class="text-primary font-bold font-label-lg">Atención Personalizada</p>
+							<p class="text-on-surface-variant text-sm">Respuesta en menos de 24 horas hábiles.</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-4">
+						<div class="w-12 h-12 bg-primary flex items-center justify-center rounded-full text-white">
+							<span class="material-symbols-outlined">encrypted</span>
+						</div>
+						<div>
+							<p class="text-primary font-bold font-label-lg">Confidencialidad</p>
+							<p class="text-on-surface-variant text-sm">Tratamiento seguro de datos bajo ley B2B.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-white p-10 rounded-2xl shadow-2xl border border-primary/5">
+				<form class="space-y-4" id="investor-form">
+					<div class="grid grid-cols-2 gap-4">
+						<div class="space-y-2">
+							<label class="text-primary font-bold font-label-lg" for="name">Nombre Completo</label>
+							<input class="w-full p-3 rounded border-outline focus:ring-2 focus:ring-secondary-container focus:border-secondary border transition-all" id="name" placeholder="Ej. Juan Pérez" required type="text"/>
+						</div>
+						<div class="space-y-2">
+							<label class="text-primary font-bold font-label-lg" for="email">Correo Corporativo</label>
+							<input class="w-full p-3 rounded border-outline focus:ring-2 focus:ring-secondary-container focus:border-secondary border transition-all" id="email" placeholder="juan@empresa.com" required type="email"/>
+						</div>
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="space-y-2">
+							<label class="text-primary font-bold font-label-lg" for="phone">Teléfono</label>
+							<input class="w-full p-3 rounded border-outline focus:ring-2 focus:ring-secondary-container focus:border-secondary border transition-all" id="phone" placeholder="+52 ..." required type="tel"/>
+						</div>
+						<div class="space-y-2">
+							<label class="text-primary font-bold font-label-lg" for="amount">Monto a Invertir</label>
+							<select class="w-full p-3 rounded border-outline focus:ring-2 focus:ring-secondary-container focus:border-secondary border transition-all" id="amount">
+								<option>$100k - $300k</option>
+								<option>$300k - $1M</option>
+								<option>$1M+</option>
+							</select>
+						</div>
+					</div>
+					<div class="space-y-2">
+						<label class="text-primary font-bold font-label-lg" for="message">Mensaje</label>
+						<textarea class="w-full p-3 rounded border-outline focus:ring-2 focus:ring-secondary-container focus:border-secondary border transition-all" id="message" placeholder="Escriba sus dudas o requerimientos específicos..." rows="4"></textarea>
+					</div>
+					<button class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-container transition-all shadow-lg active:scale-95" type="submit">
+						Enviar Solicitud de Información
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-primary text-on-primary">
+		<div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter py-section-padding-mobile md:py-12 max-w-container-max mx-auto border-b border-white/10">
+			<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+				<div class="font-headline-sm text-headline-sm font-bold text-on-primary mb-2">AquaPura del Sur</div>
+				<p class="text-on-primary/70 text-sm max-w-xs text-center md:text-left">Poniendo el estándar de pureza en el mercado hídrico del sur de México desde 2012.</p>
+			</div>
+			<div class="grid grid-cols-2 gap-12 md:flex md:space-x-12 mb-8 md:mb-0">
+				<div class="flex flex-col space-y-3">
+					<span class="font-bold font-label-lg uppercase text-secondary-container">Compañía</span>
+					<a class="text-on-primary/70 hover:text-secondary-container transition-colors font-label-lg" href="#">Trayectoria</a>
+					<a class="text-on-primary/70 hover:text-secondary-container transition-colors font-label-lg" href="#">Sucursales</a>
+					<a class="text-on-primary/70 hover:text-secondary-container transition-colors font-label-lg" href="#">B2B Portal</a>
+				</div>
+				<div class="flex flex-col space-y-3">
+					<span class="font-bold font-label-lg uppercase text-secondary-container">Legal</span>
+					<a class="text-on-primary/70 hover:text-secondary-container transition-colors font-label-lg" href="#">Privacidad</a>
+					<a class="text-on-primary/70 hover:text-secondary-container transition-colors font-label-lg" href="#">Términos</a>
+					<a class="text-on-primary/70 hover:text-secondary-container transition-colors font-label-lg" href="#">Compliance</a>
+				</div>
+			</div>
+			<div class="text-center md:text-right">
+				<p class="font-bold text-secondary-container mb-2">Director Comercial</p>
+				<p class="text-on-primary font-headline-sm mb-1">Lic. Refugio Méndez</p>
+				<p class="text-on-primary/70 text-sm">contacto@aquapuradelsur.com</p>
+			</div>
+		</div>
+		<div class="px-gutter py-6 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-on-primary/50 opacity-80">
+			<span>© 2024 AquaPura del Sur. Todos los derechos reservados.</span>
+			<div class="flex gap-6 mt-4 md:mt-0">
+				<a class="hover:underline" href="#">Facebook</a>
+				<a class="hover:underline" href="#">LinkedIn</a>
+				<a class="hover:underline" href="#">Instagram</a>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<script>
+	// Micro-interactions for form
+	const form = document.getElementById('investor-form') as HTMLFormElement;
+	if (form) {
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const btn = form.querySelector('button');
+			if (btn) {
+				const originalText = btn.innerText;
+				btn.innerText = 'Enviando...';
+				btn.disabled = true;
+				
+				setTimeout(() => {
+					btn.innerText = '¡Solicitud Enviada!';
+					btn.classList.replace('bg-primary', 'bg-green-600');
+					form.reset();
+					setTimeout(() => {
+						btn.innerText = originalText;
+						btn.classList.replace('bg-green-600', 'bg-primary');
+						btn.disabled = false;
+					}, 3000);
+				}, 1500);
+			}
+		});
+	}
+
+	// Active State Logic for Navbar
+	window.addEventListener('scroll', () => {
+		const sections = ['inicio', 'trayectoria', 'proceso', 'precios', 'contacto'];
+		let current = '';
+
+		sections.forEach(section => {
+			const element = document.getElementById(section);
+			if (element) {
+				const rect = element.getBoundingClientRect();
+				if (rect.top <= 100) current = section;
+			}
+		});
+
+		document.querySelectorAll('nav a').forEach(link => {
+			link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+			link.classList.add('text-on-surface-variant', 'font-medium');
+			
+			if (link.getAttribute('href') === `#${current}`) {
+				link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+				link.classList.remove('text-on-surface-variant', 'font-medium');
+			}
+		});
+	});
+</script>
