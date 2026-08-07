@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="font-headline-sm text-headline-sm font-bold text-primary">
 				AquaPura del Sur
 			</div>
-			<div class="hidden md:flex items-center space-x-8">
+			<div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-8">
 				<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#inicio">Inicio</a>
 				<a class="text-on-surface-variant font-medium hover:text-cta-amber transition-colors duration-300 font-label-lg text-label-lg" href="#trayectoria">Trayectoria</a>
 				<a class="text-on-surface-variant font-medium hover:text-cta-amber transition-colors duration-300 font-label-lg text-label-lg" href="#proceso">Proceso</a>
@@ -30,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="space-y-6">
 					<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-lg text-label-lg tracking-wider">LÍDERES EN PURIFICACIÓN B2B</span>
 					<h1 class="text-white font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl leading-tight drop-shadow-md">
-						El negocio del agua: <span class="text-secondary-fixed-dim">seguro, rentable</span> y en expansión.
+						Su franquicia de agua purificada, lista en 90 días
 					</h1>
 					<p class="text-primary-fixed font-body-lg text-body-lg max-w-lg drop-shadow-sm">
 						Únase a la infraestructura de purificación más robusta del sur. Garantizamos pureza absoluta con tecnología de vanguardia y rentabilidad corporativa comprobada.
@@ -90,63 +90,6 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Purification Process Section -->
-	<section class="py-section-padding-mobile md:py-section-padding-desktop overflow-hidden" id="proceso" style="position: relative; background-image: linear-gradient(rgba(10, 46, 77, 0.85), rgba(10, 46, 77, 0.85)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVOR-jfYph13H19Wu8v3kvLzVjTL1kXxsPykQTjoXCCDIfm5GVB-K_yUL3pyZOCxsVPINdXd7gxjIb_iTnjNHeOTc33WHGHsLKMJobHqDshvfr_Zold2KhRCVET33jh0Pu2nX4tAHJWSzNdZFL-ScW9dmVslGUypYZhYMdiwzJTGnZ3nOchj9TF4jbcSY6jOFKhLouwCaNizTnBcMOOBwcCOFdfOlbzG4vRjzK3tEVqyGmxHvfyhWoGt5yeQGZOIA_hObgYrNBuog'); background-size: cover; background-position: center; backdrop-filter: blur(8px);">
-		<div class="px-gutter max-w-container-max mx-auto">
-			<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-				<div class="max-w-2xl">
-					<h2 class="font-headline-lg text-headline-lg mb-4 text-white">Sistema de Purificación de 7 Etapas</h2>
-					<p class="font-body-lg text-primary-fixed">Tecnología de grado farmacéutico aplicada al consumo masivo para garantizar un producto libre de impurezas.</p>
-				</div>
-				<span class="material-symbols-outlined text-6xl opacity-20 text-secondary-fixed-dim">biotech</span>
-			</div>
-			<div class="grid grid-cols-1 md:grid-cols-7 gap-4 relative">
-				<!-- Step 1 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">1</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Filtración</h4>
-					<p class="text-xs px-2 text-primary-fixed">Eliminación de sedimentos y sólidos en suspensión.</p>
-				</div>
-				<!-- Step 2 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">2</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Carbón Activado</h4>
-					<p class="text-xs px-2 text-primary-fixed">Remoción de cloro, olores y sabores orgánicos.</p>
-				</div>
-				<!-- Step 3 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">3</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Suavización</h4>
-					<p class="text-xs px-2 text-primary-fixed">Intercambio iónico para reducir dureza mineral.</p>
-				</div>
-				<!-- Step 4 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">4</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Ósmosis Inversa</h4>
-					<p class="text-xs px-2 font-bold text-primary-fixed">Corazón del proceso: Pureza molecular.</p>
-				</div>
-				<!-- Step 5 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">5</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Pulido</h4>
-					<p class="text-xs px-2 text-primary-fixed">Ajuste final de cristalinidad y textura.</p>
-				</div>
-				<!-- Step 6 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">6</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Luz UV</h4>
-					<p class="text-xs px-2 text-primary-fixed">Desinfección microbiológica inmediata.</p>
-				</div>
-				<!-- Step 7 -->
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full bg-cta-amber text-white flex items-center justify-center font-headline-sm mb-4 border-4 border-white shadow-lg transition-transform group-hover:scale-110">7</div>
-					<h4 class="font-bold mb-2 text-label-lg text-white">Ozonización</h4>
-					<p class="text-xs px-2 text-primary-fixed">Preservación de frescura prolongada.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<!-- Price Grid Section -->
 	<section class="py-section-padding-mobile md:py-section-padding-desktop bg-background" id="precios">
 		<div class="px-gutter max-w-container-max mx-auto">
@@ -160,7 +103,7 @@ import Layout from '../layouts/Layout.astro';
 					<h3 class="text-primary font-headline-sm text-headline-sm mb-2">Minorista Local</h3>
 					<p class="text-on-surface-variant text-sm mb-6">Ideal para pequeños establecimientos y oficinas.</p>
 					<div class="mb-6">
-						<span class="text-primary font-headline-lg text-headline-lg">$22</span>
+						<span class="text-primary font-headline-lg text-headline-lg">$25</span>
 						<span class="text-on-surface-variant">/ Garrafón</span>
 					</div>
 					<ul class="space-y-4 mb-8 flex-grow">
@@ -185,7 +128,7 @@ import Layout from '../layouts/Layout.astro';
 					<h3 class="text-white font-headline-sm text-headline-sm mb-2">Distribuidor Oro</h3>
 					<p class="text-primary-fixed text-sm mb-6">Volumen medio para rutas de distribución locales.</p>
 					<div class="mb-6">
-						<span class="text-white font-headline-lg text-headline-lg">$16</span>
+						<span class="text-white font-headline-lg text-headline-lg">$18</span>
 						<span class="text-primary-fixed">/ Garrafón</span>
 					</div>
 					<ul class="space-y-4 mb-8 flex-grow">
