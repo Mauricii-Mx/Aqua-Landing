@@ -1,3 +1,11 @@
 # Bitácora del Proyecto - Aterrizaje Acuático
 
 * **Auditoría Inicial:** Verificación del repositorio y estructura del proyecto para asegurar un historial limpio antes de iniciar los requerimientos del cliente.
+- Actividad: Sincronización y despliegue del Sobre 1 en el proyecto "Aqua-Landing".
+- Cambios realizados: Actualización de título, precios y eliminación de etapas en el código local.
+- Comandos ejecutados: 
+  * git add .
+  * git commit -m "Sobre 1: Actualizacion de titulo, precios y eliminacion de etapas"
+  * git pull origin main --rebase
+  * git push
+- Resultado: Cambios subidos correctamente al repositorio remoto en GitHub y despliegue exitoso verificado en Vercel.
